@@ -1,0 +1,16 @@
+title: 'SGC Digital '
+description: Sistema de Gestión de Calidad Digital de FUESMEN
+template:
+  repo: sgc-digital-template
+  name: sgc-digital
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
